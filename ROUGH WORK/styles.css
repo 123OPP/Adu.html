@@ -1,0 +1,148 @@
+/*p {
+       color: #06f572; background-color: #06f572
+     } */
+.headingOne {
+  color: red;
+}
+.headingTwo {
+  background-color: aqua;
+}
+#firstpara {
+  background-color: #06f572;
+}
+#customers {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#customers #customers {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#customers th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: rgb(4, 89, 2);
+}
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+.Float {
+  width: 170px;
+  height: 170;
+  float: right;
+}
+
+.flex-conatainer {
+  background-color: dodgerblue;
+  display: flex;
+  height: 200px;
+  align-items: flex-end;
+  /*align-items: stretch;*/
+  /* align-items: flex-start;*/
+  /*align-items: center;/*
+  
+  /*flex-wrap: wrap;*/
+  /* justify-content: center;*/
+  /*justify-content: flex-end;*/
+  /*justify-content: space-around;*/
+  /*justify-content: space-between;*/
+  /*justify-content: space-evenly;*/
+  /*flex-wrap: wrap-reverse;*/
+
+  /*flex-direction: column;*/
+  /*flex-direction: row-reverse;*/
+  /*flex-direction: row;*/
+}
+.flex-conatainer > div {
+  background-color: #06f572;
+  margin: 10px;
+  padding: 20px;
+  font-size: 2rem;
+  width: 800px;
+  text-align: center;
+}
+/*li{
+         display:inline;
+         text-decoration: none;
+         color:aqua
+       }
+       .parent{
+         background-color: #06f572;
+         text-align:center;
+         padding:10px;
+       }
+       .child-one{
+         background-color: yellow;
+         padding: 5px;
+         position: sticky;
+         top: 10px
+       }
+       .child-two{
+         background-color: rebeccapurple;
+         padding: 5px;
+       }
+       .child-three{
+         background-color: brown;
+         padding: 5px;
+      
+       }
+       .center-div{
+         text-align: center;
+         margin: 32px auto;
+       
+ 
+       }
+       /*li{
+         display: inline; 
+         text-decoration: none;
+         color:#06f572
+       }*/
+/*p:first-child{
+         color: #06f572;
+       }
+      /* h2 {
+         color: #06f572;
+         background-color: #6a00cd;
+       } */
+p i:first-child {
+  color: #f5061a;
+}
+p::first-line {
+  color: #06f572;
+  font-weight: 900;
+}
+.para::first-letter {
+  color: #f5061a;
+  font-size: 32px;
+}
+h1::after {
+  content: "-after heading";
+}
+h1::before {
+  content: "before heading";
+}
+p::after {
+  content: "he must go";
+}
+p::before {
+  content: "it is there";
+}
+ul li::marker {
+  color: #06f572;
+  font-size: 25px;
+}
+
+ol li::marker {
+  color: rebeccapurple;
+  font-size: 25px;
+}
+::selection {
+  color: #f5061a;
+  background: yellow;
+}
