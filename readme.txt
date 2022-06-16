@@ -204,3 +204,12 @@ https://www.zeolearn.com/ui-ux-design-training/schedule?delivery-type=online-cla
   https://www.wallpapertip.com/wmimgs/166-1668509_summer-forest.jpg
 
 style="background-image: url('https://www.wallpapertip.com/wmimgs/166-1668509_summer-forest.jpg')"
+
+
+
+THESIS EXAMINER SEARCH LINK
+https://www.ucl.ac.uk/bartlett/planning/prof-fulong-wu
+
+https://www.ucl.ac.uk/bartlett/planning/people/associate-professor-fangzhu-zhang
+
+https://www.sheffield.ac.uk/usp/people/academic-staff/zheng-wang
