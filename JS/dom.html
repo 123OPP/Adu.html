@@ -27,6 +27,12 @@
         padding: i1px;
         border: 1px solid black;
       }
+      aside {
+        background-color: aqua;
+        display: inline-block;
+        padding: 1rem;
+        transform: scale(0.9);
+      }
     </style>
   </head>
   <body>
@@ -55,8 +61,47 @@
     <div id="myDiv">
       <h3>this is DIV element</h3>
     </div>
+    <!--keyboard-->
+    <input type="text" id="keyEvent" />
+
+    <!--aside>
+      <h3>Card</h3>
+      <p id="pl">double click to change class</p>
+    </aside>-->
+
+    <div id="mouseDiv">mouse event</div>
+    <p id="pl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cum
+      quisquam magni laudantium, cumque rem placeat eius neque dolor
+      reprehenderit.
+    </p>
 
     <script>
+      //mouse event
+      let divData = document.querySelector("#mouseDiv");
+      divData.addEventListener("mousedown", () => {
+        document.getElementById("pl").style.color = "red";
+      });
+      divData.addEventListener("mouseup", () => {
+        document.getElementById("pl").style.color = "blue";
+      });
+      //keyboard events
+      //object called event
+      let keyboard = document.querySelector("#keyEvent");
+      keyboard.addEventListener("keydown", (event) => {
+        console.log(event);
+      }); // as long as you keep typing
+
+      //keypress
+      keyboard.addEventListener("keypress", (event) => {
+        console.log(event); // works just like keydown but not ofr arrow and functions
+      });
+
+      //keyup
+      keyboard.addEventListener("#keyup", (event) => {
+        console.log(event);
+      }); //only when we release the key.
+
       const atr = document.createAttribute("style");
       atr.value = "color:red";
 
@@ -112,9 +157,9 @@
       }
       console.log(collection);
       //CSS
-      let pElement = document.getElementById("demo");
+      /*let pElement = document.getElementById("demo");
       pElement.style.color = "red";
-      document.getElementById("h1").style.color = "blue";
+      document.getElementById("h1").style.color = "blue";*/
 
       //const collection = document.getElementsByClassName;
       // html content +css
