@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment</title>
+
+    <style>
+      /*.second {
+        color: blue;
+        padding: 2px;
+        border: 1px solid black;
+      }*/
+
+      #ollist {
+        color: blue;
+        padding: 5px;
+      }
+
+      .footer {
+        background-color: blueviolet;
+        color: aqua;
+        padding: 5px;
+        height: 50px;
+      }
+      #toggleClass {
+        background-color: brown;
+        color: chocolate;
+        height: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="toggleClass" class="header">this class is to toggle</div>
+    <section id="container"></section>
+    <ul id="ull">
+      <li class="first">One</li>
+      <li class="second">two</li>
+      <li class="third">Three</li>
+    </ul>
+    <ol id="ollist">
+      <li class="first">One</li>
+      <li class="second">two</li>
+      <li class="third">Three</li>
+    </ol>
+
+    <div class="footer">this is footer</div>
+
+    <script>
+      //1
+      //let container = document.getElementById("container");
+      document.getElementById("container").innerHTML = "Hello";
+      //document.querySelector("#container").style.backgroundColor = "hello";
+
+      //2
+      const second = document.querySelectorAll(".second");
+      for (let a = 0; a < second.length; a++) {
+        second[a].style.backgroundColor = "yellow";
+      }
+
+      //3.
+      let lielement = document.getElementsByTagName("li");
+      lielement[5].innerHTML = "This is the third number in ol li";
+
+      //4.
+
+      //document.getElementById(" container").innerHTML = "Hello";
+
+      //5.
+
+      let ullist = document.querySelector("#ull");
+      //array of data
+      let langs = ["fourth", "fifth"];
+      let data = langs.map((a) => {
+        let li = document.createElement("li");
+        li.textContent = a;
+        return li;
+      });
+      ullist.append(...data);
+
+      //6.
+      const listof = document.querySelectorAll("#ollist");
+      for (let i = 0; i < listof.length; i++) {
+        listof[i].style.backgroundColor = "green";
+      }
+
+      //7.
+      //document.querySelector(".footer").remove();
+
+      //8
+      function addNewClass() {
+        let element = document.getElementsById("footer");
+        element.classList.add("main");
+      }
+
+      //9/
+      function removeOldClass() {
+        let element = document.getElementById("removeClass");
+        element.classList.remove("main");
+      }
+      //10
+
+      function toggleCSS() {
+        let element = document.getElementsById("toggleClass");
+        element.classList.toggle("header");
+      }
+    </script>
+  </body>
+</html>
+
+<!--
+    1. select the section with an id container using all the known methods
+    2. select all the list items which has class second
+    3. select the list items which has class third but only the list item inside ol.
+    4. give section with id of container text "hello!"
+    5. crate new li element, append the li to ul
+    6. get all the li items form ol tag and add background color green to all the li items
+    7.remove the div with the class footer
+    8. add the class main to div with class footer
+    9. remove the class main on the div with class footer
+    10. Toggle class header.
+-->

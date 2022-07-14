@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <script>
+      //DATE:
+
+      //January 1, 1970
+      const date = new Date();
+      const date1 = new Date(2022, 11, 24, 10, 33, 30, 0);
+      //getFullYear-yyyy
+      console.log("Year: ", date.getFullYear());
+
+      // getMonth () -0 -11
+      //january-0
+      //  juanuary to november
+      console.log("Month :", date.getMonth());
+      console.log("Month:", date.toLocaleString("en-Us", { month: "long" }));
+
+      //getDate() -day 1-31
+      console.log("Day :", date.getDate());
+
+      //getHours() - 0 23
+      console.log("Hours:", date.getHours());
+
+      //getMinutes() - 0 -59
+      console.log("Minutes:", date.getMinutes());
+
+      //getSeconds() -0-59
+      console.log("Seconds:", date.getSeconds());
+
+      //getMillliseconds() - -999
+      console.log("Milliseconds:", date.getMilliseconds());
+
+      //getTime() -milliseconds since january 1970
+      console.log("get time:", date.getTime());
+
+      //getDay() weekday0-6
+      //sunday-0
+      //saturday-6
+      console.log("day:", date.getDay());
+      //Date:
+      // const date = new Date();
+      //console.log(date);
+      // year, month, day, hours, minutes, seconds, milliseconds
+      //const date1 = new Date(2022, 11, 24, 10, 33, 30, 0);
+      console.log(date1);
+      const date2 = new Date(2022, 11);
+      console.log(date2);
+
+      // forEach
+      let numberArray = [1, 12, 3, 4, 5];
+      let foroutput = [];
+      numberArray.forEach((item) => {
+        if (item % 3 == 0) foroutput.push(item);
+      });
+      console.log(foroutput);
+      numberArray.filter((item) => item % 2 == 0);
+      //find
+      // find < 2
+      // let numberArray = [1, 12, 3, 4, 5];
+      let findData = numberArray.find((item) => item > 2);
+      console.log(findData);
+
+      //filter, find, reduce, forEach, spread, rest
+      //concate
+      //destrcuturing;;
+      // const element = {
+      //   x: 10,
+      //   y: 11,
+      //   z: 12,
+      // };
+      // let x=element.x
+      //let y=element.y
+      //let z=element.z
+      // let { x: p, y, z } = element;
+      //console.log(p, y, z);
+
+      // const obj = {
+      //   today: { min: 40, max: 100 },
+      // };
+      // let {
+      //   today: { max: maxtemp, min },
+      // } = obj;
+      // console.log(maxtemp, min);
+      // console.log(min);
+
+      //spread operator
+      // let numberArray = [1, 2, 3, 4, 5];
+      // let days = ["M", "T", "W"];
+      // // numberArray 'days starts' days array
+      // let finalArray = [0, ...numberArray, "days starts", ...days];
+      // //[0, 1, 2, 3, 4, 5];
+      // finalArray[2] = "updated";
+      // console.log(finalArray);
+
+      // // Rest operator
+      // function addNumbers(...args) {
+      //   //const args =[x, y, z, i, j];
+      //   // const args = [1, 2, 3];
+      //   //reduce
+      //   return args.reduce((a, b) => a + b);
+      // }
+      // console.log(addNumbers(1, 2, 3, 4, 5, 10, 50));
+
+      // //Reduce:
+      // //let numberArray = [1, 2, 3, 4, 5];
+      // let reduceData = numberArray.reduce((acc, curr) => acc + curr, 10);
+      // console.log(reduceData);
+
+      //filter-method
+      // find numbers > 0 ?
+      //Reduce:
+      // const arrayNumbers = [4, 5.6, -9.8, 42, 6, 8.24, -2];
+      // const datavalues = arrayNumbers.filter((num) => num > 0);
+      //console.log(datavalues);
+      //
+
+      // let concatarry = function (arg1, arg2) {
+      //    return arg1.concat(arg2);
+      // };
+      // console.log(concatarry([1, 2], [3, 4, 5]));
+
+      //annonymous functions:
+      //let welcome1 = function () {
+      //code
+      //console.log("this is function1");
+      // };
+      //welcome1();
+      // let welcome2 = () => {
+      //  console.log("this is function2");
+      // return "this is function2";
+      // };
+      // welcome2();
+      // let welcome3 = () => "this is function3";
+      //console.log(welcome3());
+
+      // let welcome4 = (num) => "this is function4" + num;
+      // console.log(welcome4(10));
+
+      // function testData() {
+      //  const mathData = {
+      //   piValue: 3.14,
+      // };
+
+      //Object.freeze(mathData);
+      //mathData.piValue = 100;
+      ///return mathData;
+      // }
+      //let data = testData();
+      //console.log(data);
+
+      //TERNARY OPERATORS
+      //if(condition){//} else{//}
+      //condition? statement if true : staement if false
+      //function checkEqual(a, b) {
+      //return a === b ? "number are equal" : "numbers not equal";
+      // }
+      //let output = checkEqual(10, 10);
+      // console.log(output);
+
+      // function checkSign(num) {
+      //if elseif else
+      //  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+      // }
+      //let output = checkSign(0);
+      //console.log(output);
+
+      //OBJECTS:
+
+      //for loop
+      // for (let index = 0; index < 10; index++) {
+      // console.log("this is index value", index);
+      //for (let k = 0; k < 5; k++) {
+      //console.log("this is k::", k);
+      //}
+      //}
+
+      /*let person = {
+
+       let names = ["pooja", "mourya", 20]
+         //key:value
+         age: 30,
+         color: "green",
+         firstName: "oppong",
+         3: "three",
+         name: "abc",
+         trending: "this is tending",
+         "user name": "Jess smith",
+       };
+       person.address = "this is just address"; //add property
+       person.color = "red"; // update any roperty
+       delete person.firstName; // remove and update
+       console.log(person);
+
+       //hasOwnProperty()
+       let present = {
+         gifts: "abc",
+         papers: "pqr",
+         parcels: "xyz",
+       };
+       function checkProperty(property) {
+         return present.hasOwnProperty(property);
+       }
+       console.log(checkProperty("papers"));
+       console.log(checkProperty("stone"));
+
+       //dot notation
+       //console.log(person);
+       //console.log(person.color);
+       //console.log(person.age);
+
+       //
+
+       //square bracket notation
+       // console.log(person["firstName"]);
+       //console.log(person[3]);
+       //console.log(person["user name"]);
+
+       //sort by :name , trending
+       let keyname = "trending";
+       console.log(person[keyname]);
+
+       // FUNCTIONS: dry- do not repeat yourself
+       //SCOPE ;visibility
+       //switch case\
+       /*function checkOutput(value) {
+         let answer = "";
+         switch (value) {
+           case 1:
+             answer = "alpha";
+             break;
+           case 2:
+             answer = "beta";
+             break;
+           case 3:
+             answer = "gamma";
+             break;
+           default:
+             answer = "No case matched";
+             break;
+         }
+         return answer;
+       }
+
+       console.log(checkOutput(4));
+
+       // if else:
+       function checkNumber(number) {
+         //if number is > 100 and < 150
+         //if number is < 10 and > 0
+         // not a valid number
+         if (number > 100 && number < 150) {
+           return "Greater 100";
+         } else if (number < 10 || number > 0) {
+           return "less 10";
+         } else return "not valid";
+       }
+       console.log(checkNumber(15));
+       console.log(checkNumber(20));
+       console.log(checkNumber(101));
+
+       //
+       function trueOrfalse(value) {
+         if (value) {
+           return "Value is true";
+         } else {
+           return "Value is false";
+         }
+       }
+       console.log(trueOrfalse(false));
+
+       //compare if 12
+       function equalTo12(number) {
+         if (number == 12) return "Value is 12";
+         return "value is not 12";
+       }
+       console.log(equalTo12("12"));
+
+       let message = "Outside function";
+
+       function updateData() {
+         let firstName = "Pooja Mourya";
+         message = "update message";
+         console.log(message);
+         console.log(firstName);
+         return firstName;
+       }
+       //updateData();
+       let firstName = updateData();
+       console.log(message);
+       console.log(firstName);
+
+       function printData() {
+         console.log(message);
+       }
+
+       printData();
+       console.log("out", message);
+
+       function addNumber(a, b, name) {
+         console.log("Add function", a + b + name);
+       }
+       addNumber(1, 2, "Yaw");
+       addNumber(10, 20, "oppong");
+       addNumber(2, 7, "Kwaku");
+
+       function checkArguments() {
+         console.log("This is hi from the function");
+       }
+       checkArguments();
+       // console.log("Global console");
+       //ARRAY
+       // let personNames = ["pooja", "ruhi", "priya", "shuti", "neha"];
+       // console.log(personNames);
+       // console.log(personNames[0]);
+       // console.log(personNames[1]);
+       // console.log(personNames[2]);
+       // console.log(personNames[3]);
+       // console.log(personNames[4]);
+       // //nested Array, 2D
+       // let personAge = [12, 23, 4, 5, 70];
+       // let lastName = ["Mourya", "mehre", "patil", "jess", "shinde"];
+
+       // let allPersonData = [
+       //   ["pooja", "ruhi"],
+       //   [12, 23, 5, 70],
+       //   ["mourya", "mehra", "patile", "jess", "shinde"],
+       //   "simple text",
+       // ];
+       // allPersonData.push(["a", "b"]);
+       // console.log(allPersonData);
+
+       // // console.log(allPersonData);
+       // // console.log(allPersonData[0][1]);
+       // // console.log(allPersonData[1]);
+       // // console.log(allPersonData[2]);
+       // // console.log(allPersonData[3]);
+       // // console.log(allPersonData[2][3]);
+
+       // // //push-add data at the end of the array
+       // let personNames = ["pooja", "ruhi", "priya", "shuti", "neha"];
+       // //modification
+
+       // personNames[2] = "Changed name";
+       // personNames[3] = "Oppong";
+       // console.log(personNames);
+       // personNames.push("Jess");
+
+       // //unshift- add data in front of the array
+       // personNames.unshift("Shital");
+
+       // console.log(personNames);
+       // pop
+       // personNames.pop();
+
+       // //shift
+       // personNames.shift();
+       // console.log(personNames);
+
+       //2.math operations
+       let sum = 10 + 10;
+       console.log(sum);
+
+       let sub = 10 - 5;
+       console.log(sub);
+
+       let multiply = 10 * 5;
+       console.log(multiply);
+       let division = 10 / 5;
+       console.log(division);
+       let mod = 10 % 5;
+       console.log(mod);
+
+       //compound assignments: 27th JUNE,2022
+       let newSum = 10;
+       newSum = newSum + 20;
+       newSum += 30;
+       console.log(newSum);
+
+       let newSub = 10;
+       newSub = newSub - 2;
+       newSub -= 3;
+
+       let newMul = 10;
+       newMul = newMul * 2;
+       newSub *= 3;
+
+       let newDiv = 10;
+       newDiv = newDiv / 2;
+       newDiv /= 5;
+
+       let newMod = 4;
+       newMod = newMod % 2;
+       newMod %= 2;
+
+       //INCREMENT AND DECREMENT BY PRINCIPLES
+
+       let increment = 1;
+       increment += 1;
+       increment++;
+       console.log(increment);
+
+       let decrement = 3;
+       decrement -= 1;
+       decrement--;
+       console.log(decrement);
+
+       //ESCAPE CHARACTORS
+       /* let sentence = 'First line \n "quotes" \n second line';
+         console.log(sentence);
+         let sent = 'First line "quotes" \n second line';
+         console.log(sent);
+         let see = 'First line "quotes" second line';
+         console.log(see);*/
+
+      /*let s = 'First line \tline \n "quotes" \n second line';
+         console.log(s);
+         /*
+       n- new line
+       t-tab*/
+
+      //CONCAT- it helps to add additional data to the original string.
+      //let str = "First String" + "Second String";
+
+      /*let username = "Pooja Mourja";
+       username = "Priya";
+       let welcome = "Hello" + username + "Welcome to our app";
+
+       //PROPERTY LENGTH
+
+       let user = "Pooja Mourja";
+       user[0] = "K";
+       console.log(user.length);
+       console.log(user[0]);
+
+       username = "Priya";
+       let wel = "Hello" + username + "Welcome to our app";
+
+       //BOOLEANS: the variables should either be true of false.
+       //if
+       if (2 < 1) {
+         console.log("Wrong");
+       } else {
+         console.log("Right");
+       }
+
+       let a = 0;
+       let b = 1;
+       if (a < b) {
+         console.log("Wrong");
+       } else {
+         console.log("Right");
+       }
+
+       /*let a=0
+         let b=1
+         b==1 ? true
+         b!=1 ? false
+
+         if(b==1)
+         {
+          console.log('Wrong')
+         }
+         else{
+          console.log('Right')
+         }*/
+
+      // console.log("printing message on console");
+
+      //
+      /**/
+      //1.variables
+
+      //var name = "Pooja Mourya";
+      // name = "Priya";
+      //console.log(name);
+
+      // let gender = "Female";
+      // gender = "Male";
+      //console.log(gender);
+
+      // const color = "green";
+      //color = "Pink";
+      //console.log(color);
+
+      //var name = "Ruhi";
+      //console.log(name);
+    </script>
+  </body>
+</html>

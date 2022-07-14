@@ -201,6 +201,17 @@ https://www.zeolearn.com/ui-ux-design-training/schedule?delivery-type=online-cla
 
   13. display
   Flexbox layout
+
+  14. css transitions
+  transition-delay
+  transition-property
+  transition-duration
+
+
+  15.css animation
+
+  14
+  z index property
   https://www.wallpapertip.com/wmimgs/166-1668509_summer-forest.jpg
 
 style="background-image: url('https://www.wallpapertip.com/wmimgs/166-1668509_summer-forest.jpg')"
@@ -213,3 +224,14 @@ https://www.ucl.ac.uk/bartlett/planning/prof-fulong-wu
 https://www.ucl.ac.uk/bartlett/planning/people/associate-professor-fangzhu-zhang
 
 https://www.sheffield.ac.uk/usp/people/academic-staff/zheng-wang
+
+
+
+UI/UX training tutorials LINK
+https://www.coursera.org/?skipBrowseRedirect=true
+
+The Design of Everyday Things, 2013 edition by Don Norman
+Interaction Design by Jennifer Preece, Helen Sharp and Yvonne Rogers (in alphabetical order)
+Human Computer Interaction, 2004 by Dix, Finlay, Abowd & Beale. This is an advance text book.
+
+https://www.coursera.org/learn/user-experience-design/lecture/ZdDUq/important-terms-and-concepts

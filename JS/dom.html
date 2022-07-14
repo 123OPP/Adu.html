@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h2 {
+        color: red;
+      }
+      h1 {
+        /*color: green;*/
+      }
+      .div1 {
+        border: 1px solid black;
+        padding: 8px;
+        margin: 1rem;
+      }
+      .para {
+        background-color: red;
+      }
+
+      #myDiv {
+        background-color: lightblue;
+        padding: i1px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>this is new heading</h1>
+    <h1>this is heading</h1>
+    <h2>tis is h2 heading</h2>
+    <p id="demo"></p>
+    <div class="div1">element 1</div>
+    <div class="div1 para">element 2</div>
+    <p class="div1 pa">tis is para</p>
+
+    <p>firstname:<input type="text" value="oppong" name="firstname" /></p>
+    <p>firstname:<input type="text" value="charles" name="firstname" /></p>
+    <p id="namepara"></p>
+
+    <ul>
+      <li>coffee</li>
+      <li>tea</li>
+      <li>pea</li>
+    </ul>
+    <ol>
+      <li>pens</li>
+      <li>caps</li>
+    </ol>
+    <p id="lipara"></p>
+    <div id="myDiv">
+      <h3>this is DIV element</h3>
+    </div>
+
+    <script>
+      const atr = document.createAttribute("style");
+      atr.value = "color:red";
+
+      const h1 = document.getElementsByTagName("h1")[0];
+      h1.setAttributeNode(atr);
+
+      // access one element
+      document.querySelector("p").style.backgroundColor = "blue";
+      document.querySelector(".div1").style.backgroundColor = "grey";
+      document.querySelector("#myDiv").style.backgroundColor = "purple";
+
+      const list = document.querySelectorAll("p");
+      for (let i = 0; i < list.length; i++) {
+        list[i].style.backgroundColor = "brown";
+      }
+
+      const opp = document.querySelectorAll(".div1");
+      for (let a = 0; a < opp.length; a++) {
+        opp[a].style.backgroundColor = "yellow";
+      }
+      const kk = document.querySelectorAll("#myDiv");
+      for (let b = 0; b < kk.length; b++) {
+        kk[b].style.backgroundColor = "yellow";
+      }
+      //create
+      const div = document.createElement("p");
+      div.innerText = "This is created for div element";
+
+      //append
+      document.getElementById("myDiv").appendChild(div);
+
+      //create
+      const para = document.createElement("p");
+      para.innerText = "This is JS paragrahp";
+
+      //append
+      document.body.appendChild(para);
+
+      let lielement = document.getElementsByTagName("li");
+      lielement[1].innerHTML = "Hello";
+      document.getElementById("lipara").innerHTML = lielement[1].innerHTML;
+      console.log(lielement[1].innerHTML);
+
+      let nameElements = document.getElementsByName("firstname");
+      console.log(nameElements[0].tagName);
+      document.getElementById("namepara").innerHTML = nameElements[1].value; //value
+
+      const collection = document.getElementsByClassName("div1 para");
+
+      for (let i = 0; i < collection.length; i++) {
+        collection[i].innerHTML = "Data updated";
+        collection[i].style.backgroundColor = "blue";
+      }
+      console.log(collection);
+      //CSS
+      let pElement = document.getElementById("demo");
+      pElement.style.color = "red";
+      document.getElementById("h1").style.color = "blue";
+
+      //const collection = document.getElementsByClassName;
+      // html content +css
+      console.log(document.getElementById("demo"));
+      document.getElementById("demo").innerHTML = "Hellow world";
+
+      //innnerHtml
+      //innerText
+      // textContent
+    </script>
+  </body>
+</html>

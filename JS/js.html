@@ -1,0 +1,95 @@
+!<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>document</title>
+    <style>
+      .divStyle {
+        background-color: coral;
+        width: 100%;
+        padding: 25px;
+        color: white;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!--append/prepend-->
+    <ul id="app">
+      <li>Javascript</li>
+    </ul>
+    <p id="datapara">
+      This is the para element which has <span> s span element</span>. final
+      data
+    </p>
+    <a href="https://www.google.com" id="dataAnchor" target="_blank">Google</a>
+
+    <p id="dataRemove">this para with will be removed</p>
+    <!--<button id="firstBtn" onclick="clickHandler()">Alert button</button>-->
+    <button id="firstBtn">Alert button</button>-->
+
+    <button onclick="addNewClass()">Add class</button>
+    <div id="classdiv">this is div</div>
+
+    <!---->
+
+    <button onclick="removeOldClass()">remove class</button>
+    <div id="removeClass" class="divStyle">class wil be removed</div>
+    <!---->
+    <button onclick="toggleCSS()">toggle css</button>
+    <div id="toggleClass" class="divStyle">class will be removed</div>
+    <script>
+      //toggle
+      function toggleCSS() {
+        let element = document.getElementById("toggleClass");
+        element.classList.toggle("divStyle");
+      }
+      //removeclass
+      function removeOldClass() {
+        let element = document.getElementById("removeClass");
+        element.classList.remove("div.Style");
+      }
+      // addclass
+      function addNewClass() {
+        let element = document.getElementById("classdiv");
+        element.classList.add("divStyle");
+      }
+
+      const button = document.getElementById("firstBtn");
+      button.addEventListener("click", clickHandler);
+      function clickHandler() {
+        alert("new Message");
+      }
+      //
+      function clickHandler() {
+        alert("Welcome user");
+      }
+      //
+      // document.querySelector("#dataRemove").remove();
+      //document.getElementById("dataRemove").remove();
+      //removeattribute
+      document.querySelector("#dataAnchor").removeAttribute("href");
+
+      //selec ul tag
+      let app = document.querySelector("#app");
+      //array of data
+      let langs = ["typescript", "HTML", "Angular", "React", "Node js"];
+      let data = langs.map((a) => {
+        let li = document.createElement("li");
+        li.textContent = a;
+        return li;
+      });
+      //app.append(...data);
+      app.prepend(...data);
+
+      // innerHTML, textContent, innerText
+      console.log("innerTEXT");
+      console.log(document.querySelector("#datapara").innerText);
+
+      console.log("innerHTML");
+      console.log(document.querySelector("#datapara").innerHTML);
+
+      console.log("textContent");
+      console.log(document.querySelector("#datapara").textContent);
+    </script>
+  </body>
+</html>

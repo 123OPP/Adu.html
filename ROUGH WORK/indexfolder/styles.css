@@ -1,6 +1,6 @@
 /*p {
        color: #06f572; background-color: #06f572
-     } */
+     } 
 .headingOne {
   color: red;
 }
@@ -45,21 +45,21 @@
   align-items: baseline;
   flex-flow: row wrap;
   /*align-items: stretch;*/
-  /* align-items: flex-start;*/
-  /*align-items: center;/*
+/* align-items: flex-start;*/
+/*align-items: center;/*
   
   /*flex-wrap: wrap;*/
-  /* justify-content: center;*/
-  /*justify-content: flex-end;*/
-  /*justify-content: space-around;*/
-  /*justify-content: space-between;*/
-  /*justify-content: space-evenly;*/
-  /*flex-wrap: wrap-reverse;*/
+/* justify-content: center;*/
+/*justify-content: flex-end;*/
+/*justify-content: space-around;*/
+/*justify-content: space-between;*/
+/*justify-content: space-evenly;*/
+/*flex-wrap: wrap-reverse;*/
 
-  /*flex-direction: column;*/
-  /*flex-direction: row-reverse;*/
+/*flex-direction: column;*/
+/*flex-direction: row-reverse;
   flex-direction: row;
-}
+}*/
 .flex-conatainer > div {
   background-color: #06f572;
   margin: 10px;
@@ -75,7 +75,7 @@
   gap: 10px;
   /*align-content: stretch;
   /*grid-template-columns: auto auto auto auto auto auto;
-  /*align-content: space-evenly;*/
+  /*align-content: space-evenly;
   grid-template-areas:
     "header header header header header header"
     "menu main main main right right "
@@ -83,8 +83,8 @@
 }
 
 /*justify-content: space-evenly;*/
-/*grid-template-rows: 80px 200px 500px;*/
-
+  /*grid-template-rows: 80px 200px 500px;*/
+}
 .grid-container > div {
   background-color: #f1f1f1;
   text-align: center;
@@ -106,7 +106,7 @@
 .item5 {
   grid-area: footer;
 }
-/*.item8 {
+item8 {
   grid-area: 1 / 2 / 5 / 6;
 }
 /* grid-area:
@@ -167,10 +167,10 @@ grid-column-end*/
 /*p:first-child{
          color: #06f572;
        }
-      /* h2 {
+     h2 {
          color: #06f572;
          background-color: #6a00cd;
-       } */
+       } 
 p i:first-child {
   color: #f5061a;
 }
@@ -206,4 +206,142 @@ ol li::marker {
 ::selection {
   color: #f5061a;
   background: yellow;
+}*/
+img {
+  position: absolute;
+  left: 15px;
+  top: 0px;
+  z-index: -5;
+}
+body {
+  color: #f5061a;
+  font-size: 20px;
+}
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+  z-index: 1;
+}
+.gray-box {
+  position: absolute;
+  background: #f1f1f1;
+  height: 60px;
+  width: 70%;
+  left: 50px;
+  top: 50px;
+  z-index: 3;
+}
+.green-box {
+  position: absolute;
+  background: #06f572;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+  z-index: 2;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: #06f572;
+  transition: width 2s, height 6s;
+  background-color: 3s;
+  transition-delay: 3s;
+}
+div:hover {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+}
+#div1 {
+  transition-timing-function: linear;
+}
+
+#div2 {
+  transition-timing-function: ease;
+}
+
+#div3 {
+  transition-timing-function: ease-in;
+}
+
+#div4 {
+  transition-timing-function: ease-out;
+}
+#div5 {
+  transition-timing-function: ease-in-out;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: colorchange;
+  /* animation-duration: 10s; */
+  position: relative;
+  /* animation-delay: 2s;
+  animation-iteration-count: 3s;
+  animation-direction: alternate-reverse; */
+  animation: colorchange 5s infinite;
+}
+
+#div1 {
+  animation-timing-function: linear;
+}
+#div2 {
+  animation-timing-function: ease;
+}
+#div3 {
+  animation-timing-function: ease-in;
+}
+#div4 {
+  animation-timing-function: ease-out;
+}
+#div5 {
+  animation-timing-function: ease-in-out;
+}
+
+/*div:hover {
+}
+
+
+  }*/
+@keyframes colorchange {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+  /* 0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: brown;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: green;
+    left: 0px;
+    top: 0px;
+  } */
 }

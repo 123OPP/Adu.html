@@ -1,272 +1,187 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <style>
-#customers{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border: solid red 1px;
-  border-collapse: collapse;
-  width: 60%; 
-  padding-left: 500px
-  
-  
-}
-#customers td, #customers th {
-  border: 1px solid wheat;
-  text-align: center;
-
-}
-#customers th {
- padding-top: 10px; background-color: blue;
- text-decoration: lowercase;
-}
-#customers tr:nth-child(even) {
-background-color: #abcece;
-}
-.mouseOver{
-  background-color: brown;
-  color:white
-  padding:20px;
-  text-align:center
-}
-
-.mouseOver:hover{
-  background-color: blue;
-}
-.hintcss:hover{
-  display: block;
-}
-.flex-container{
-  background-color: aqua;
-  color: blueviolet;
-display: flex;
-flex-direction: row;
-justify-content: center;
-
-}
-.flex-container>div{
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 1.4rem;
-  width: 100px;
-  
-}
-
-
-
-  </style>
-</head>
-<body>
-
-<div class="flex-container">
-  <div>the man Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et doloribus omnis,
-     quisquam quibusdam explicabo facilis expedita hic, aliquid culpa cum aspernatur.
-     Consequuntur deserunt quae sit facere, natus corporis pariatur. Sed!</div>
-  <div>he is there</div>
-  <div>let him come</div>
-  <div>they are there</div>
-</div>
-  
-  <div class="hintcss">
-    <p> this is good</p>
-  </div>
-  <div class="mouseOver">mouseover css</div>
-
-  <div class="mouseOver"> mouse over css</div>
-  <h1></h1>
-  <a href="../secondapproach.html"><h1>Home</h1></a>
-  <table id="customers">
-    <thead>
-      <tr>
-        <th> oppong</th>
-        <th> taw</th>
-        <th> opoku</th>
-        <th> kwaku</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>fuse</td>
-        <td>fosu</td>
-        <td>kenn</td>
-        <td>leave</td>
-      </tr>
-      <tr>
-        <td>fuse</td>
-        <td>gosu</td>
-        <td>jenn</td>
-        <td>leave</td>
-      </tr>
-      <tr>
-        <td>muse</td>
-        <td>nosu</td>
-        <td>xenn</td>
-        <td>eeave</td>
-      </tr>
-      <tr>
-        <td>puse</td>
-        <td>hosu</td>
-        <td>benn</td>
-        <td>lea</td>
-      </tr>
-
-    </tbody>
-  </table>
-
-  <p><img src="market icon 3.png" alt=""/></p>
-
-
-</body>
-</html>
-
-
-
-
-
-
-<!--
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROUGH DOCUMENT</title>
-    <style>
-      p{
-        color:red; 
-        background-color: aqua;
+    <title>justify-content</title>
 
+    <style>
+      h2 {
+        color: red;
       }
-      h1{
-        color:blue;
-        background-color: blueviolet;
+      h1 {
+        color: green;
       }
-      .kk{
-        background-color: black; color:aliceblue
+      .div1 {
+        color: blueviolet;
+        font-size: 2rem;
+        font-style: italic;
+        border: 1px solid black;
+        margin: 10px;
       }
-      .pp{
-        background-color: green;
-      }
-      #opp{
-        border-color: blue
+      .para {
+        background-color: red;
       }
     </style>
   </head>
-
   <body>
-    <h1 class="pp" >opacity 0.1</h1>
-    <h1 class="kk">opacity 0.3</h1>
-    <h1 class="kk">opacity 0.6</h1>
-    <h1 style="background-color: yellow; opacity: 1">opacity 1</h1>
+    <script>
+         // swap two numbers
+         // a=10
+         //b=20
+         function swap (a, b) {
+          let c=a;
+          // c=10, a=10
+          a=b;
+          //a=20, b=20
+          b=c;
+          //b=10, c=10
+          console.log (a, b)
+         }
 
-    <div class="kk">opacity 0.3</div>
-    <div class="kk">opacity 0.6</div>
-    <div style="background-color: rgba(255, 150, 255, 1)">opacity 1</div>
-    <p style="border: dashed">this is davae</p>
-    <p style="border: ">border color</p>
-    <p id="opp" double; border-width: medium; border-color: aquamarine">
-      this is border for use
-    </p>
-    <p style="border-style: dotted; border-color: blue; border-width: 20px">
-      this is my border
-    </p>
-    <p style="border: solid">border style in the room</p>
-    <p style="border: inset">this is border for us</p>
-    <p>bo</p>
-    <p style="border: outset">this is my border for us</p>
-    <p
-      style="
-        background-image: url('https://placekitten.com/200/300');
-        height: 200px;
-        background-repeat: repeat;
-        background-position: top-left;
-      "
-    >
-      image-background
-    </p>
+      // print
+      /*
+       *
+       **
+       ***
+       ****
+       *****
+       ******
+       *******
+       */
+      let chr = "";
+      for (let x = 1; x < 6; x++) {
+        for (y = 0; y < x; y++) {
+          chr = chr + "*";
+        }
+        console.log(chr);
+        chr = "";
+      }
 
-    <p style="border: 10px double red"></p>
-    <div id="opp" >this is border</div>
-    <div style="border: double"></div>
-    <p style="border-style: dotted; border-color: green; border-radius: 20px">
+      //find sum of 3 numbers and ther determine if output is positive or negative
 
-        <p style="background-color: yellow; opacity:0.6">this opacity 0.6</p>
+      const checkSing = (a, b, c) => {
+        return a + b + c < 0 ? "negative" : "positive";
+      };
+      //OR
+      let threeNumbers = (a, b, c) => {
+        if (a + b + c < 0) {
+          return "negative";
+        } else {
+          return "positive";
+        }
+      };
+      // write a function to check a string is blank or not
+      function checkBlank(string) {
+        if (string.length == 0) {
+          return "The string is blank";
+        } else {
+          return "The string is not blank";
+        }
+      }
+      console.log(checkBlank(""));
+      //OR
+      let checkString = (str) => {
+        return str.length === 0 ? "empty string" : "string not empty";
+      };
 
-      this is my body
-    </p>
+      //accept 2 integers and find the lagest
+      let fNumber = 10;
+      let sNumber = 20;
+      function checkNumber(a, b) {
+        if (a > b) {
+          console.log(a + "is largest");
+        } else if (b > a) {
+          console.log(b + "is largest");
+        } else {
+          console.log("both are the same");
+        }
+      }
+      //or
+      function number(a, b) {
+        return a > b
+          ? "a is greater"
+          : b > a
+          ? "b is greater"
+          : "both are equal";
+      }
+      // sum of 3 number and the determine if output is positve or negative//
+      let firstNumber = 2;
+      let secondNumber = 3;
+      let thirdNumber = 4;
+      function sumNumbers(b, d, e) {
+        let sumNumbers = b + d + e;
+        if (sumNumbers >= 0) {
+          console.log("positive");
+        } else {
+          console.log("negative");
+        }
+      }
+      sumNumbers(firstNumber, secondNumber, thirdNumber);
 
-    <p>
+      const checkSign = (a, b, c) => {
+        return a + b + c < 0 ? " negative" : "positive";
+      };
 
-    <div style="background-color: green; border-style:dotted; border-right-width:thin;green; margin-bottom:100px; margin-top:100; 
-    margin-left: 100px; margin-right:100px">this is margins</div>
-<p></p>
-    <div style="border: double; margin-left: 100px">the is margin</div>
+      function Emptystring(oppong) {
+        return oppong == "" ? "the string is empty" : "the string is not empty";
+      }
 
-    <div style="background-color: green; border-style:dotted; margin-bottom:200px">shorthand</div>
-    </p>
-    <div style="border:solid;border-color: green; background-color: green">this is em</div>
-    <p>
-        <div style="border: 1px solid black; padding-top: 100px">padding</div>
-    </p>
+      console.log(Emptystring("oppong"));
+    </script>
 
-     <p></p><p></p>
-     <p></p><p></p>
-     <p></p><p></p>
-     <p></p><p></p>
+    <h1 id="h1">this heading</h1>
+    <h2 id="pp">this h2 heading</h2>
+    <p id="demo"></p>
+    <div class="div1">Element 1</div>
+    <div class="div1 para">Element 2</div>
+    <div class="div1 para">the main</div>
 
+    <p>first name: <input type="text" value="pooja" name="firstname" /></p>
+    <p>first name: <input type="text" value="Ruhi" name="firstname" /></p>
+    <p id="namepara"></p>
 
-     <div style="border: 2px solid black; background-color: rgba(0, 0, 255, 0.884); width:
-     300px;height: 300px; margin-left: 500px;overflow: auto; text-align:justify" >your comments are needed. the people are required to understand their root and be able to 
-walk through the corridors of the people. We do <span style="text-decoration:underline">meet them</span> the difficulties people go through to arrive at 
-this pointthis is div for height and widthyour comments are needed. the people are required to understand their root and be able to 
-walk through the corridors of the people. We do understand the difficulties people go through to arrive at 
-this pointyour comments are needed. the people are required to understand their root and be able to 
-walk through the corridors of the people. We do understand the difficulties people go through to arrive at 
-this pointyour comments are needed. the people are required to understand their root and be able to 
-walk through the corridors of the people. We do understand the difficulties people go through to arrive at 
-this point</div>
+    <ul>
+      <li>coffee</li>
+      <li>Tea</li>
+      <li>Mango</li>
+    </ul>
+    <ol>
+      <li>ten</li>
+      <li>pea</li>
+    </ol>
+    <p id="lipara"></p>
+    <script>
+      const para = document.createElement("p");
+      para.innerText = "This is JS paragraph";
 
- <p><textarea style="max-width: 200px; min-width: 200px;max-height: 200; min-height: 200;margin-left :300px"
-    > your comments are needed. the people are required to understand their root and be able to 
-walk through the corridors of the people. We do understand the difficulties people go through to arrive at 
-this point</textarea></p>
+      document.body.appendChild(para);
 
+      let oppong = document.getElementsByTagName("li");
+      document.getElementById("lipara").innerHTML = oppong[1].innerHTML;
+      console.log(oppong);
+      let nameElements = document.getElementsByName("firstname");
+      console.log(nameElements[1].tagName);
+      document.getElementById("namepara").innerHTML = nameElements[1].value;
 
-<div style="text-decoration-line: underline; text-decoration-color: green"> this man is there</div>
-<p></p>
+      console.log(document.getElementById("demo"));
+      document.getElementById("demo").innerHTML = "Hello world";
 
-<a href="#" style="text-decoration:none">google</a>
+      let pElement = document.getElementById("demo");
+      pElement.style.color = "red";
 
-<p>
-<div style="text-align: center;">text text-align</div>
-<div style="text-align: right">text text-align</div>
-<div style="text-align: left">text text-align</div>
+      document.getElementById("h1").style.color = "blue";
 
+      document.getElementById("pp").style.color = "brown";
+      document.getElementById("pp").style.fontStyle = "italic";
 
+      let divElement = document.getElementsByClassName("div1");
 
-</p>
+      divElement[1].innerHTML = "Text updated for me";
+      /*divElement.style.color = "green";*/
 
-
-<!--FONT FAMILY
--->
-
-<P style="font-family: Arial, Helvetica, sans-serif">Font family</P>
-<p style="font-family: monospace; font-weight:bolder">this another family</p>
-<p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-font-style:italic;font-weight: bolder">the is me in the room</p>
-<h1 style="font-family: Arial; font-weight:bold; font-size: 20px">the is font for you and me</h1>
-
-
-
-<h1 style="font: size 100px;">font size</h1>
-<h1 style="font: 100px Arial bolder ">this is shorthand</h1>
+      console.log(divElement);
+    </script>
   </body>
-
 </html>
