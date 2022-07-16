@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UL ELEMENT</title>
+    <style></style>
+  </head>
+
+  <body>
+    <ul id="opp">
+      <li>this is li element one</li>
+      <li>this is li element two</li>
+    </ul>
+
+    <ul id="ulDiv">
+      event
+    </ul>
+    <li id="pp">
+      reprehenderit. mouse event Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Itaque cum quisquam magni laudantium, cumque rem placeat
+      eius neque dolor
+    </li>
+
+    <script>
+      //create
+      const ulelement = document.createElement("ul");
+      ulelement.innerText = "This is ul element";
+
+      //append
+      document.body.appendChild(ulelement);
+
+      //selec ul tag
+      let kk = document.querySelector("#opp");
+      //array of data
+      let langs = ["opportunity", "Ghana"];
+      let data = langs.map((a) => {
+        let li = document.createElement("li");
+        li.textContent = a;
+        return li;
+      });
+      kk.append(...data);
+
+      // event
+      let divData = document.querySelector("#ulDiv");
+      divData.addEventListener("mousedown", () => {
+        document.getElementById("pp").style.color = "red";
+      });
+      divData.addEventListener("mouseup", () => {
+        document.getElementById("pp").style.color = "green";
+      });
+    </script>
+  </body>
+</html>

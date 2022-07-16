@@ -60,6 +60,19 @@
       <option value="data">value</option>
     </select>
     <script>
+      // settimeout
+      function message() {
+        console.log("just a message");
+      }
+      setTimeout(message, 5000);
+
+      //setInterval
+      let count = 0;
+      function counter() {
+        console.log("message");
+      }
+      setInterval(counter, 3000);
+      
       document
         .querySelector("#selectbox")
         .addEventListener("change", (event) => {

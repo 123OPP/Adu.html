@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>document</title>
+  </head>
+  <body>
+    <script>
+      //console.log(this);
+      const video = {
+        title: "title",
+        play() {
+          console.log(this);
+        },
+      };
+      video.play();
+
+      //
+      video.stop = function () {
+        console.log(this);
+      };
+      video.stop();
+
+      //
+      function playVideo() {
+        console.log(this);
+      }
+      playVideo();
+      // 15/07/2022
+      //constructor functions
+      // PascalCase
+      function Video(title) {
+        this.title = title;
+        //console.log(this);
+      }
+      //video
+      let video1 = new Video("abc");
+      console.log(video1);
+
+      const video2 = new Video("new title");
+      console.log(video2);
+
+      //OBJECT
+      const color = {
+        red: "rose",
+        pink: "lotus",
+        green: "grass",
+      };
+      console.log(color);
+      //object.keys
+      let keys = Object.keys(color);
+      console.log(keys);
+
+      //object.values
+      let entry = Object.entries(color);
+      console.log(entry);
+
+
+    </script>
+  </body>
+</html>
